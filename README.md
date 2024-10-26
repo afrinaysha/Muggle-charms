@@ -1,38 +1,36 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# [GuideCAT] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Muggle Charms]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Afrin Ayisha MD - [EMEA College of Arts and science, Kondotty]
+- Member 2: Fathima Rafa K - [EMEA College of Arts and science, Kondotty]
+- Member 3: Hilfa Fathima PM - [EMEA College of Arts and science, Kondotty]
 
 ### Project Description
-[2-3 lines about what your project does]
+The main page aims to be resources for CAT aspirants.But each links opens to some funny kids videos which we means to be useless.But still it tends to be entretaining for users.We added funny quizes and answers.Also tried to add some funny elements to make everything much exciting.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[We are pretending to provide guide for CAT aspirants.But we felt they deserve more entretainment more than getting confined to their studies.Because as a human being they deserve happiness during stress hours of studies.]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[As a solution we decided to provide funny videos and elements to make them more engaging and relaxing.We tricked them to believe like all the links inside are study resources, but actually they are links to kids videos , we are ofcourse making it nostalgic and funny and entretain users]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- html,css,java script
+- Frameworks used
+- Libraries used
+- Tools used
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+
+
 
 ### Implementation
 For Software:
@@ -55,19 +53,6 @@ For Software:
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
 # Build Photos
 ![Components](Add photo of your components here)
 *List out all components shown*
@@ -87,9 +72,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [Afrin Aysha MD]: [PROGRAMMER]
+- [Fathima Rafa K]: [PROGRAMMER]
+- [Hilfa Fathima PM]: [IDEA AND PLANNING]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 

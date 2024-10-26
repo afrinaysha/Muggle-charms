@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Questions</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script>
+        function submitQuiz() {
+            const correctAnswers = {
+                q1: "Maybe",   // Correct answer for question 1
+                q2: "Reflective", // Correct answer for question 2
+                q3: "Both can be justify",// Correct answer for question 3
+                q4: "It has too many problems", // Correct answer for question 4
+                q5: "Because it saw salad dressing", // Correct answer for question 5
+                q6: "you are looking saucy!", // Correct answer for question 6
+                q7: "a satisfactory!", // Correct answer for question 7
+                q8: "they don't have the guts", // Correct answer for question 8
+                q9: "frostbite!", // Correct answer for question 9
+                q10: "Because it had the drumsticks", // Correct answer for question 10
+
+
+            };
+            let score = 0;
+            const totalQuestions = Object.keys(correctAnswers).length;
+
+            for (let question in correctAnswers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (selected) {
+                    if (selected.value === correctAnswers[question]) {
+                        score++;
+                    }
+                }
+            }
+
+            const result = document.getElementById('result');
+            result.innerHTML = `<h2>Your Score: ${score} out of ${totalQuestions}</h2>`;
+            result.innerHTML += `<p>Correct Answers:</p><ul>`;
+            for (let question in correctAnswers) {
+                result.innerHTML += `<li>${question}: ${correctAnswers[question]}</li>`;
+            }
+            result.innerHTML += `</ul>`;
+        }
+    </script>
+</head>
+
+<body>
+    <section class="container">
+        <h1 class="quiz-title">Answer These Fun Questions!</h1>
+        <form id="quizForm">
+
+            <div class="question">
+                <label>1. If a tomato is a fruit, does that make ketchup a smoothie?</label><br>
+                <input type="radio" name="q1" value="Yes"> Yes<br>
+                <input type="radio" name="q1" value="No"> No<br>
+                <input type="radio" name="q1" value="Maybe"> Maybe<br>
+            </div>
+            <div class="question">
+                <label>2. What color is the mirror?</label><br>
+                <input type="radio" name="q2" value="Clear"> Clear<br>
+                <input type="radio" name="q2" value="Blue"> Blue<br>
+                <input type="radio" name="q2" value="Reflective"> Reflective<br>
+            </div>
+            <div class="question">
+                <label>3. Why is the color of sky went blue?</label><br>
+                <input type="radio" name="q3" value="Because it can't get pink"> Because it can't get pink<br>
+                <input type="radio" name="q3" value="Due to scattering"> Due to scattering<br>
+                <input type="radio" name="q3" value="Both can be justify"> Both can be justify<br>
+            </div>
+            <div class="question">
+                <label>4.why was the math book sad ?</label><br>
+                <input type="radio" name="q4" value="It has too many problems ">It has too many problems <br>
+                <input type="radio" name="q4" value="It was misunderstood"> It was misunderstood<br>
+                <input type="radio" name="q4" value="It loss it's calculater "> It loss it's calculater<br>
+            </div>
+            <div class="question">
+                <label>5.Why did the tomato turn red?</label><br>
+                <input type="radio" name="q5" value="Because it saw salad dressing"> Because it saw salad dressing<br>
+                <input type="radio" name="q5" value="it was shy"> it was shy<br>
+                <input type="radio" name="q5" value="it got embarrassed"> it got embarrassed<br>
+            </div>
+            <div class="question">
+                <label>6.what did one plate say to the other plate?</label><br>
+                <input type="radio" name="q6" value="dinner's on me!">dinner's on me! <br>
+                <input type="radio" name="q6" value="you are looking saucy!">you are looking saucy!<br>
+                <input type="radio" name="q6" value="let's get this party started!"> let's get this party started!<br>
+            </div>
+            <div class="question">
+                <label>7.what do you call a factory that sells good products?</label><br>
+                <input type="radio" name="q7" value="a satisfactory!"> a satisfactory!<br>
+                <input type="radio" name="q7" value="a productive place">a productive place<br>
+                <input type="radio" name="q7" value="a factory reset">a factory reset <br>
+            </div>
+            <div class="question">
+                <label>8.why don't skeltons fight each other?</label><br>
+                <input type="radio" name="q8" value="they don't have the guts"> they don't have the guts<br>
+                <input type="radio" name="q8" value="they can't find their bones">they can't find their bones<br>
+                <input type="radio" name="q8" value="they always lose their heads"> they always lose their heads<br>
+            </div>
+            <div class="question">
+                <label>9.what do you get when you cross a snowman and a vampire?</label><br>
+                <input type="radio" name="q9" value="frostbite!">frostbite! <br>
+                <input type="radio" name="q9" value="a chilly creature">a chilly creature<br>
+                <input type="radio" name="q9" value="a frozen nightmare">a frozen nightmare <br>
+            </div>
+            <div class="question">
+                <label>10.why did the chicken join a band?</label><br>
+                <input type="radio" name="q10" value="Because it had the drumsticks">Because it had the drumsticks <br>
+                <input type="radio" name="q9" value="it wanted to rock out">it wanted to rock out<br>
+                <input type="radio" name="q9" value="it was feeling clucky!"> it was feeling clucky!<br>
+            </div>
+            <!-- Add more questions as needed -->
+
+            <button type="button" class="submit-button" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <div id="result" class="result"></div>
+
+
+
+    </section>
+</body>
+
+</html>
